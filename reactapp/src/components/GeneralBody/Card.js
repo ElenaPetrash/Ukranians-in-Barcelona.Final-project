@@ -5,7 +5,7 @@ import "./card.css";
 function Card(props) {
   return (
     <div className="card">
-      <div className="card-body" key={props.element.id}>
+      <div className="card-body">
         <img src={props.element.foto} width="50px" className="card-image" />
         <h3 className="card-title">{props.element.name_event}</h3>
       </div>
