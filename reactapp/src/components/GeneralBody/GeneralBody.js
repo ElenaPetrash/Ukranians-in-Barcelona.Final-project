@@ -32,7 +32,7 @@ function GeneralBody(props) {
         <Carousel data={slides} className="generalCarousel" />
         <div className="generalCarouselCard">
           {events.slice(0, 2).map((event) => (
-            <Card element={event} />
+            <Card key={event.id} element={event} />
           ))}
         </div>
       </div>
